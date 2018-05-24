@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /**
+     * 增加
+     */
     private void add() {
         Random random = new Random();
         int i = random.nextInt(10000);
@@ -133,6 +136,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 });
     }
 
+    /**
+     * 查找
+     */
     private void find() {
         RealmObservable
                 .createObservable(new Function<Realm, List<Student>>() {
